@@ -1,0 +1,53 @@
+.footer {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #f9f9fb;
+
+    .container {
+        width: 1160px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .phoneLink {
+        margin: 18px 0 0 0;
+
+        a {
+            font-size: 16px;
+            font-weight: 500;
+            color: #000000;
+        }
+    }
+
+    .socialLinks {
+        margin: 18px 0 0 0;
+        display: flex;
+        align-items: center;
+        column-gap: 20px;
+    }
+
+    .top {
+        width: 100%;
+        padding: 60px 0;
+
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        border-bottom: 1px solid rgb(175, 177, 189, 0.2);
+    }
+
+    .bottom {
+        height: 70px;
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+}

@@ -1,0 +1,33 @@
+.row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .title {
+        p {
+            font-family: "Inter", sans-serif;
+
+            font-size: 16px;
+            line-height: 24px;
+            color: #000000;
+        }
+    }
+
+    .list {
+        margin: 10px 0 0 0;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        a {
+            margin: 10px 0 0 0;
+            font-family: "Inter", sans-serif;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+
+            color: #000000;
+        }
+    }
+}
