@@ -22,8 +22,6 @@ function App() {
     <>
       <Header />
       <div className='globalContainer'>
-
-
         <Switch>
           <Route exact path="/" component={Home} />
 

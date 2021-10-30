@@ -6,7 +6,7 @@ export const NavBar = () => {
   const links = [
     {
       name: "Каталог",
-      path: "/catalog",
+      path: "/",
     },
     {
       name: "Хиты продаж",

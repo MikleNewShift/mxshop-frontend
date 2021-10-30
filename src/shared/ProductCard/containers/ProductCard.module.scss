@@ -1,0 +1,101 @@
+.card {
+    width: 260px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    transition: all 0.2s ease;
+
+    &:hover {
+    }
+
+    .img {
+        position: relative;
+        width: 100%;
+        height: 260px;
+
+        border-radius: 4px;
+        overflow: hidden;
+
+        background-color: #f9f9fb;
+
+        img {
+            width: 100%;
+            height: 100%;
+
+            object-fit: cover;
+        }
+    }
+
+    .buttons {
+        position: absolute;
+        bottom: 15px;
+        left: 50%;
+
+        transform: translate(-50%);
+
+        display: flex;
+        align-items: center;
+        column-gap: 30px;
+
+        opacity: 0;
+        user-select: none;
+        pointer-events: none;
+
+        transition: all 0.2s ease;
+    }
+
+    .title {
+        margin: 20px 0 0 0;
+        p {
+            margin: 0;
+            padding: 0;
+            font-family: "Inter", sans-serif;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+        }
+    }
+
+    .priceBlock {
+        margin: 8px 0 0 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .price {
+        p {
+            margin: 0;
+            padding: 0;
+            font-family: "Inter", sans-serif;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+        }
+    }
+
+    .oldPrice {
+        margin: 0 0 0 16px;
+        p {
+            margin: 0;
+            padding: 0;
+            font-family: "Inter", sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 18px;
+
+            text-decoration: line-through;
+
+            color: #82828b;
+        }
+    }
+
+    &:hover {
+        .buttons {
+            opacity: 1;
+            pointer-events: all;
+        }
+    }
+}

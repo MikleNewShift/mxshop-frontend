@@ -1,0 +1,79 @@
+.button {
+    box-shadow: 0px 3px 52px rgba(90, 92, 102, 0.06);
+    outline: none;
+    border: none;
+    width: 46px;
+    height: 46px;
+
+    cursor: pointer;
+
+    background-color: #fff;
+
+    border-radius: 4px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        width: 24px !important;
+        height: 24px !important;
+    }
+
+    .groupButtons {
+        height: 46px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        input {
+            width: 42px;
+            height: 46px;
+
+            border: none;
+            outline: none;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-size: 18px;
+        }
+
+        .counter {
+            width: 46px;
+            height: 100%;
+            background-color: #fff;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            p {
+                font-family: "Inter", sans-serif;
+                font-size: 16px;
+                font-weight: 400;
+            }
+        }
+
+        .leftBtn,
+        .rightBtn {
+            width: 46px;
+            height: 46px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background-color: #f0f0f5;
+        }
+
+        .leftBtn {
+            border-radius: 4px 0 0 4px;
+        }
+
+        .rightBtn {
+            border-radius: 0 4px 4px 0;
+        }
+    }
+}

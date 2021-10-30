@@ -4,7 +4,9 @@
 }
 
 body {
-    min-height: 100vh;
+    position: relative;
+    padding: 0 0 350px;
+    min-height: calc(100vh - 350px);
 
     font-family: "Inter", sans-serif;
 }
