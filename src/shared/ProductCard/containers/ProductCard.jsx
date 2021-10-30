@@ -10,7 +10,7 @@ export const ProductCard = ({ card }) => {
     <div className={s.card}>
       <div className={s.img}>
         {imgLink && <img src={imgLink} alt="" />}
-        <div className={s.buttons}>
+        <div className={s.headebleBtns}>
           <ButtonsBlock />
         </div>
       </div>

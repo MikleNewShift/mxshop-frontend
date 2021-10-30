@@ -7,38 +7,47 @@ export const ButtonsBlock = () => {
 
   return (
     <>
-      <button className={`${s.button} ${count ? s.addButton : ""}`}>
-        {count ? (
-          <div className={s.groupButtons}>
-            <div
-              className={s.leftBtn}
-              onClick={() => {
-                setCount(count - 1);
-              }}
-            >
-              <p>-</p>
+      <div className={s.buttons}>
+        <button
+          className={`${s.button} ${count ? s.addButton : ""}`}
+          onClick={() => {
+            if (count === 0) {
+              setCount(count + 1);
+            }
+          }}
+        >
+          {count ? (
+            <div className={s.groupButtons}>
+              <div
+                className={s.leftBtn}
+                onClick={() => {
+                  setCount(count - 1);
+                }}
+              >
+                <p>-</p>
+              </div>
+              <div className={s.counter}>
+                <p>{count}</p>
+              </div>
+              <div
+                className={s.rightBtn}
+                onClick={() => {
+                  setCount(count + 1);
+                }}
+              >
+                <p>+</p>
+              </div>
             </div>
-            <div className={s.counter}>
-              <p>{count}</p>
-            </div>
-            <div
-              className={s.rightBtn}
-              onClick={() => {
-                setCount(count + 1);
-              }}
-            >
-              <p>+</p>
-            </div>
-          </div>
-        ) : (
-          <img src="/images/card/Cart.svg" alt="" />
-        )}
-      </button>
-      {!count && (
-        <button className={s.button}>
-          <img src="/images/card/Search.svg" alt="" />
+          ) : (
+            <img src="/images/card/Cart.svg" alt="" />
+          )}
         </button>
-      )}
+        {!count && (
+          <button className={s.button}>
+            <img src="/images/card/Search.svg" alt="" />
+          </button>
+        )}
+      </div>
     </>
   );
 };
