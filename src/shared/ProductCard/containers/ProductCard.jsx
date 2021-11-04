@@ -19,11 +19,11 @@ export const ProductCard = ({ card }) => {
       </div>
       <div className={s.priceBlock}>
         <div className={s.price}>
-          <p>{price}</p>
+          <p>{price} руб.</p>
         </div>
         {oldPrice && (
           <div className={s.oldPrice}>
-            <p>{oldPrice}</p>
+            <p>{oldPrice} руб.</p>
           </div>
         )}
       </div>

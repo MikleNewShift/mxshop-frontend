@@ -1,6 +1,6 @@
 import React from "react";
 
-import { ProductCard } from "../shared/ProductCard/ProductCard";
+import { ProductCard } from "../shared/ProductCard/containers/ProductCard";
 
 export default {
   title: "Example/ProductCard",

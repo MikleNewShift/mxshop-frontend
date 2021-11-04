@@ -10,7 +10,11 @@ export const LinksRow = (props) => {
       </div>
       <div className={s.list}>
         {props.row.linksList.map((link, i) => {
-          return <a href={`${link.path}`}>{link.title}</a>;
+          return (
+            <a key={`${i}_${link.length}`} href={`${link.path}`}>
+              {link.title}
+            </a>
+          );
         })}
       </div>
     </div>

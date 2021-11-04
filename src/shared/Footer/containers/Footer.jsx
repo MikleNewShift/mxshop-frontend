@@ -82,7 +82,7 @@ export const Footer = () => {
           </div>
 
           {rows.map((row, i) => {
-            return <LinksRow row={row} />;
+            return <LinksRow key={`${i}_${row.title.length}`} row={row} />;
           })}
         </div>
         <div className={s.bottom}>copyright 2021</div>

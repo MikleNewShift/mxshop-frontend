@@ -1,0 +1,35 @@
+.carousel {
+    margin: 80px 0 0 0;
+
+    .title {
+        margin: 0 0 40px 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .navArrows {
+        display: flex;
+        align-items: center;
+        column-gap: 20px;
+    }
+
+    .test {
+        margin: 0 10px;
+        width: 20px;
+        height: 20px;
+        background-color: #000000;
+        color: #fff;
+    }
+
+    .arrowLeft,
+    .arrowRight {
+        width: 24px;
+        height: 24px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

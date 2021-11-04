@@ -21,12 +21,57 @@
         align-items: center;
         justify-content: center;
 
+        .city {
+            width: 33.3%;
+        }
+
         .logo {
+            width: 33.3%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
             a {
                 font-size: 32px;
                 letter-spacing: 2px;
                 font-weight: 600;
                 color: #000000;
+            }
+        }
+
+        .buttons {
+            width: 33.3%;
+
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            column-gap: 20px;
+
+            button {
+                position: relative;
+                width: 24px;
+                height: 24px;
+
+                border: none;
+                background-color: #ffffff;
+
+                cursor: pointer;
+            }
+
+            .counter {
+                position: absolute;
+                top: -5px;
+                right: -5px;
+                padding: 2px 6px;
+
+                border-radius: 50px;
+
+                background-color: #000000;
+                color: #fff;
+
+                p {
+                    font-size: 10px;
+                }
             }
         }
     }

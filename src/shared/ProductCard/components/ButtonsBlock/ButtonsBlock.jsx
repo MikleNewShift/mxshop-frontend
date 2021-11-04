@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, Context, useContext } from "react";
 
 import s from "./ButtonsBlock.module.scss";
 
@@ -42,11 +42,10 @@ export const ButtonsBlock = () => {
             <img src="/images/card/Cart.svg" alt="" />
           )}
         </button>
-        {!count && (
-          <button className={s.button}>
-            <img src="/images/card/Search.svg" alt="" />
-          </button>
-        )}
+
+        <button className={s.button}>
+          <img src="/images/card/Search.svg" alt="" />
+        </button>
       </div>
     </>
   );
