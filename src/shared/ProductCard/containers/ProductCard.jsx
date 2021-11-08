@@ -4,7 +4,12 @@ import { ButtonsBlock } from "../components/ButtonsBlock/ButtonsBlock";
 import s from "./ProductCard.module.scss";
 
 export const ProductCard = ({ card }) => {
-  const { imgLink, title, price, oldPrice } = card;
+  const {
+    imgLink = "/images/global/emptyPhoto.png",
+    title,
+    price,
+    oldPrice = null,
+  } = card;
 
   return (
     <div className={s.card}>
